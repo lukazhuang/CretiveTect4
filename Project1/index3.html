@@ -14,13 +14,13 @@
         const triggerButton = document.getElementById('initTrigger');
         const tarotSection = document.getElementById('tarotSection');
 
-        const tarotURL = "https://tarotapi.dev/api/v1/cards/random";
+        const tarotURL = "https://www.simplytarot.com:3000/api/v1";
         let isUpright = true; // Flag to track the current meaning
 
         const fetchTarotData = () => {
             fetch(tarotURL)
                 .then((response) => response.json())
-                .then((payload) => appendTarotData(payload))
+                .then((payload) => console.log(payload))
                 .catch((error) => console.error('Error fetching tarot data:', error));
         }
 
