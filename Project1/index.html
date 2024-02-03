@@ -128,17 +128,22 @@
                 const jokeHeader = document.createElement('h3');
                 jokeHeader.innerText = "Joke Data";
 
-                const jokeText = document.createElement('p');
-                jokeText.innerText = `Joke: ${data.setup}`;
+                const jokeSetup = document.createElement('p');
+                jokeSetup.innerText = `Joke: ${data.setup}`;
+
+                const jokePunchline = document.createElement('p');
+                jokePunchline.innerText = `Punchline: ${data.punchline}`;
 
                 // Clear previous content and append the new joke data
                 jokeSection.innerHTML = '';
                 jokeSection.appendChild(jokeHeader);
-                jokeSection.appendChild(jokeText);
+                jokeSection.appendChild(jokeSetup);
+                jokeSection.appendChild(jokePunchline);
             } else {
                 console.error('Invalid joke data received.');
             }
         }
+
 
         triggerButton.addEventListener("click", fetchTarotData);
     </script>
