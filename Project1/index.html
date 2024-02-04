@@ -12,7 +12,7 @@
     <p style="text-align:center;"><img src="Diagram.png" width="1700px" alt="diagram" /></p>
 
     <h1 style="font-family: Arial, Helvetica, sans-serif;">Tarot Reading</h1>
-    <button role="button" id="initTrigger">START!</button>
+    <button role="button" id="initTrigger">Flip the Card</button>
     <section id="tarotSection"></section>
     <section id="colorSection"></section>
     <section id="jokeSection"></section>
@@ -66,27 +66,31 @@
         }
 
         const appendTarotData = (data) => {
-            console.log(data);
+        console.log(data);
 
-            if (data.cards && data.cards.length > 0) {
-                const card = data.cards[0];
-                const cardName = card.name;
-                const cardMeaning = isUpright ? card.meaning_up : card.meaning_rev || "No meaning available for this card.";
+        if (data.cards && data.cards.length > 0) {
+        const card = data.cards[0];
+        const cardName = card.name;
 
-                const tarotHeader = document.createElement('h3');
-                tarotHeader.innerText = "Tarot Card: " + cardName;
+        // Randomly select meaning_up or meaning_rev
+        const isReversed = Math.random() < 0.5;
+        const cardMeaning = isReversed ? card.meaning_rev || "No reverse meaning available for this card." : card.meaning_up;
+        const meaningType = isReversed ? "Reverse" : "Upright";
 
-                const tarotMeaning = document.createElement('p');
-                tarotMeaning.innerText = "Meaning: " + cardMeaning;
+        const tarotHeader = document.createElement('h3');
+        tarotHeader.innerText = "Tarot Card: " + cardName;
 
-                // Clear previous content and append the new tarot card information
-                tarotSection.innerHTML = '';
-                tarotSection.appendChild(tarotHeader);
-                tarotSection.appendChild(tarotMeaning);
-            } else {
-                console.error('Invalid tarot data received.');
-            }
-        }
+        const tarotMeaning = document.createElement('p');
+        tarotMeaning.innerText = `Meaning (${meaningType}): ${cardMeaning}`;
+
+        // Clear previous content and append the new tarot card information
+        tarotSection.innerHTML = '';
+        tarotSection.appendChild(tarotHeader);
+        tarotSection.appendChild(tarotMeaning);
+    } else {
+        console.error('Invalid tarot data received.');
+    }
+}
 
         function map_range(value, low1, high1, low2, high2) {
             return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
