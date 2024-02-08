@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>index</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica%3A400%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code%3A400"/>
+  <link rel="stylesheet" href="./styles/index.css"/>
+</head>
+<body>
+<div class="index-zGB">
+  <div class="auto-group-97tf-YS7">
+    <p class="specific-card-and-the-meaning-i-want-to-display-yQw">Specific card and the meaning I want to display.</p>
+    <div class="auto-group-xaxm-PUf">
+      <div class="rectangle-1-vzP">
+      </div>
+      <p class="doctype-html-html-langen-head-meta-charsetutf-8-meta-http-equivx-ua-compatible-contentieedge-meta-nameviewport-contentwidthdevice-width-initial-scale10-titletarot-reading-title-head-body-button-rolebutton-idinittriggerstart-button-section-idtarotsection-section-script-const-triggerbutton-documentgetelementbyidinittrigger-const-tarotsection-documentgetelementbyidtarotsection-const-taroturl-https-tarotapidev-api-v1-cards-random-let-isupright-true-flag-to-track-the-current-meaning-const-fetchtarotdata-fetchtaroturl-thenresponse-responsejson-thenpayload-appendtarotdatapayload-catcherror-consoleerrorerror-fetching-tarot-data-error-const-appendtarotdata-data-consolelogdata-if-datacards-datacardslength-0-const-card-datacards0-const-cardname-cardname-const-cardmeaning-isupright-cardmeaningup-cardmeaningrev-no-meaning-available-for-this-card-const-tarotheader-documentcreateelementh3-tarotheaderinnertext-tarot-card-cardname-const-tarotmeaning-documentcreateelementp-tarotmeaninginnertext-meaning-cardmeaning-clear-previous-content-and-append-the-new-tarot-card-information-tarotsectioninnerhtml-tarotsectionappendchildtarotheader-tarotsectionappendchildtarotmeaning-else-consoleerrorinvalid-tarot-data-received-triggerbuttonaddeventlistenerclick-isupright-isupright-fetchtarotdata-note-no-initial-fetch-on-page-load-to-ensure-the-content-is-not-displayed-before-clicking-the-button-script-body-html-3JK">
+      &lt;!DOCTYPE html&gt;
+      <br/>
+      &lt;html lang=&#34;en&#34;&gt;
+      <br/>
+      &lt;head&gt;
+      <br/>
+          &lt;meta charset=&#34;UTF-8&#34;&gt;
+      <br/>
+          &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34;&gt;
+      <br/>
+          &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+      <br/>
+          &lt;title&gt;Tarot Reading&lt;/title&gt;
+      <br/>
+      &lt;/head&gt;
+      <br/>
+      &lt;body&gt;
+      <br/>
+          &lt;button role=&#34;button&#34; id=&#34;initTrigger&#34;&gt;START!&lt;/button&gt;
+      <br/>
+          &lt;section id=&#34;tarotSection&#34;&gt;&lt;/section&gt;
+      <br/>
+      
+      <br/>
+          &lt;script&gt;
+      <br/>
+              const triggerButton = document.getElementById(&#39;initTrigger&#39;);
+      <br/>
+              const tarotSection = document.getElementById(&#39;tarotSection&#39;);
+      <br/>
+      
+      <br/>
+              const tarotURL = &#34;https://tarotapi.dev/api/v1/cards/random&#34;;
+      <br/>
+              let isUpright = true; // Flag to track the current meaning
+      <br/>
+      
+      <br/>
+              const fetchTarotData = () =&gt; {
+      <br/>
+                  fetch(tarotURL)
+      <br/>
+                      .then((response) =&gt; response.json())
+      <br/>
+                      .then((payload) =&gt; appendTarotData(payload))
+      <br/>
+                      .catch((error) =&gt; console.error(&#39;Error fetching tarot data:&#39;, error));
+      <br/>
+              }
+      <br/>
+      
+      <br/>
+              const appendTarotData = (data) =&gt; {
+      <br/>
+                  console.log(data);
+      <br/>
+      
+      <br/>
+                  if (data.cards &amp;&amp; data.cards.length &gt; 0) {
+      <br/>
+                      const card = data.cards[0];
+      <br/>
+                      const cardName = card.name;
+      <br/>
+                      const cardMeaning = isUpright ? card.meaning_up : card.meaning_rev || &#34;No meaning available for this card.&#34;;
+      <br/>
+      
+      <br/>
+                      const tarotHeader = document.createElement(&#39;h3&#39;);
+      <br/>
+                      tarotHeader.innerText = &#34;Tarot Card: &#34; + cardName;
+      <br/>
+      
+      <br/>
+                      const tarotMeaning = document.createElement(&#39;p&#39;);
+      <br/>
+                      tarotMeaning.innerText = &#34;Meaning: &#34; + cardMeaning;
+      <br/>
+      
+      <br/>
+                      // Clear previous content and append the new tarot card information
+      <br/>
+                      tarotSection.innerHTML = &#39;&#39;;
+      <br/>
+                      tarotSection.appendChild(tarotHeader);
+      <br/>
+                      tarotSection.appendChild(tarotMeaning);
+      <br/>
+                  } else {
+      <br/>
+                      console.error(&#39;Invalid tarot data received.&#39;);
+      <br/>
+                  }
+      <br/>
+              }
+      <br/>
+      
+      <br/>
+              triggerButton.addEventListener(&#34;click&#34;, () =&gt; {
+      <br/>
+                  isUpright = !isUpright;
+      <br/>
+                  fetchTarotData();
+      <br/>
+              });
+      <br/>
+      
+      <br/>
+              // Note: No initial fetch on page load to ensure the content is not displayed before clicking the button.
+      <br/>
+          &lt;/script&gt;
+      <br/>
+      &lt;/body&gt;
+      <br/>
+      &lt;/html&gt;
+      <br/>
+      
+      </p>
+    </div>
+  </div>
+  <div class="auto-group-ybx9-dSs">
+    <p class="so-i-just-tried-to-use-it-and-see-if-it-works-since-the-color-form-by-rgb-so-i-let-all-rgb-value-equal-to-tarot-number-9RD">So I just tried to use it and see if it works. Since the color form by RGB, so I let all RGB value equal to tarot number.</p>
+    <div class="auto-group-o56j-CPV">
+      <p class="const-generatecolorrgb-tarotnumber-use-tarot-card-number-to-generate-rgb-value-const-r-tarotnumber-const-g-tarotnumber-const-b-tarotnumber-return-rgb-VtP">
+              const generateColorRGB = (tarotNumber) =&gt; {
+      <br/>
+                  // Use tarot card number to generate RGB value
+      <br/>
+                  const r = tarotNumber;
+      <br/>
+                  const g = tarotNumber;
+      <br/>
+                  const b = tarotNumber;
+      <br/>
+      
+      <br/>
+                  return `${r},${g},${b}`;
+      </p>
+    </div>
+  </div>
+  <div class="auto-group-1oor-wkP">
+    <p class="transfer-tarot-number-to-color-id-remapping-data-UVR">
+    Transfer tarot number to Color ID.
+    <br/>
+    Remapping data
+    </p>
+    <div class="auto-group-luuz-zCs">
+      <p class="const-fetchcolordata-tarotnumber-tarotnumber-mathroundmaprangetarotnumber-0-40-0-359-consolelogtarotnumber-const-colorurl-colorapiurltarotnumberformatcolorformat-return-fetchcolorurl-thenresponse-responsejson-catcherror-consoleerrorerror-fetching-color-data-error--tJF">
+              const fetchColorData = (tarotNumber) =&gt; {
+      <br/>
+                  tarotNumber = Math.round(map_range(tarotNumber, 0 , 40, 0, 359));
+      <br/>
+                  console.log(tarotNumber)
+      <br/>
+                  const colorURL = `${colorAPIURL}${tarotNumber}?format=${colorFormat}`;
+      <br/>
+                  return fetch(colorURL)
+      <br/>
+                      .then((response) =&gt; response.json())
+      <br/>
+                      .catch((error) =&gt; console.error(&#39;Error fetching color data:&#39;, error));
+      <br/>
+              }
+      </p>
+      <p class="function-maprangevalue-low1-high1-low2-high2-return-low2-high2-low2-value-low1-high1-low1-gE7">
+              function map_range(value, low1, high1, low2, high2) {
+      <br/>
+                  return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+      </p>
+    </div>
+  </div>
+  <div class="auto-group-orcx-KH5">
+    <p class="wrong-format-Rqu">Wrong format</p>
+    <div class="auto-group-3khu-9mu">
+      <p class="if-a-z-testletter-if-the-first-letter-is-a-letter-just-use-the-letter-meallisturl-https-wwwthemealdbcom-api-json-v1-1-searchphpfletter-else-if-0-testletter-if-the-first-number-is-0-go-to-a-meallisturl-https-wwwthemealdbcom-api-json-v1-1-searchphpfa-else-if-there-is-no-letter-or-an-invalid-letter-randomly-pick-one-const-randomletter-stringfromcharcode65-mathfloormathrandom-26-meallisturl-https-wwwthemealdbcom-api-json-v1-1-searchphpfrandomletter-HNK">
+                  if (/^[A-Z]$/.test(letter)) {
+      <br/>
+                      // If the first letter is a letter, just use the letter
+      <br/>
+                      mealListURL = `https://www.themealdb.com/api/json/v1/1/search.php?f=${letter}`;
+      <br/>
+                  } else if (/^[0]$/.test(letter)) {
+      <br/>
+                      // If the first number is 0, go to a...
+      <br/>
+                      mealListURL = `https://www.themealdb.com/api/json/v1/1/search.php?f=a`;
+      <br/>
+                  } else {
+      <br/>
+                      // If there is no letter or an invalid letter, randomly pick one
+      <br/>
+                      const randomLetter = String.fromCharCode(65 + Math.floor(Math.random() * 26));
+      <br/>
+                      mealListURL = `https://www.themealdb.com/api/json/v1/1/search.php?f=${randomLetter}`;
+      </p>
+    </div>
+  </div>
+  <div class="auto-group-7fmm-ZDM">
+    <p class="for-the-coding-part-i-extract-the-rgbs-r-data-out-of-the-color-data-and-use-it-as-an-id-to-fetch-a-joke-tFd">
+    For the coding part, I extract the rgb’s R data out of the color data, and use it as an id to fetch a joke.
+    <br/>
+    
+    </p>
+    <div class="auto-group-pke7-MQ7">
+      <p class="const-rvalue-datargbsplit0slice4-extract-r-value-from-rgb-fetchjokedatarvalue-thenjokedata-appendjokedatajokedata-catcherror-consoleerrorerror-fetching-joke-data-error-VFR">
+       const rValue = data.rgb.split(&#39;,&#39;)[0].slice(4); // Extract r value from RGB
+      <br/>
+                      fetchJokeData(rValue)
+      <br/>
+                          .then((jokeData) =&gt; appendJokeData(jokeData))
+      <br/>
+                          .catch((error) =&gt; console.error(&#39;Error fetching joke data:&#39;, error));
+      </p>
+    </div>
+  </div>
+  <div class="auto-group-cpmd-vbd">
+    <p class="changing-website-background-Fto">Changing website background</p>
+    <div class="auto-group-huhh-NiX">
+      <p class="const-colordisplay-documentcreateelementdiv-documentbodystylebackgroundcolor-datargb-hko">
+         const colorDisplay = document.createElement(&#39;div&#39;);
+      <br/>
+                      document.body.style.backgroundColor = data.rgb;
+      </p>
+    </div>
+  </div>
+  <p class="documentation-zV1">Documentation</p>
+  <p class="connect-tarot-api-Vgf">Connect Tarot API</p>
+  <p class="connect-tarot-api-with-color-api-oxF">Connect Tarot API with Color API</p>
+  <p class="connect-color-api-with-meal-api-6gT">Connect Color API with Meal API</p>
+  <p class="connect-color-api-with-joke-api-1Hd">Connect Color API with Joke API</p>
+  <p class="start-KZD">Start</p>
+  <img class="diagram2-1-EgB" src="./assets/diagram2-1.png"/>
+  <div class="line-3-xcB">
+  </div>
+  <div class="line-4-Vc7">
+  </div>
+  <div class="line-6-E3u">
+  </div>
+  <div class="line-7-NA7">
+  </div>
+  <div class="line-8-JpT">
+  </div>
+  <div class="line-5-3X9">
+  </div>
+  <p class="at-the-beginning-of-the-project-i-used-the-example-in-the-class-to-create-a-chain-cocktail-nasa-meal-recipe-indexpratice2html-BNT">
+    <span class="at-the-beginning-of-the-project-i-used-the-example-in-the-class-to-create-a-chain-cocktail-nasa-meal-recipe-indexpratice2html-BNT-sub-0">
+    At the beginning of the project, I used the example in the class to create a chain.
+    <br/>
+    Cocktail -&gt; NASA -&gt; Meal Recipe.
+    <br/>
+    
+    <br/>
+    
+    </span>
+    <span class="at-the-beginning-of-the-project-i-used-the-example-in-the-class-to-create-a-chain-cocktail-nasa-meal-recipe-indexpratice2html-BNT-sub-1">[indexPratice2.html]</span>
+  </p>
+  <p class="then-i-started-to-create-my-own-chain-i-want-to-create-a-machine-that-could-generate-a-horoscope-for-people-today-it-includes-a-tarot-reading-a-lucky-color-for-today-and-also-a-meal-recipe-for-today-that-brings-luck-due-to-the-technical-issue-later-the-mealapi-changed-to-the-joke-api-first-i-check-a-free-api-that-could-generate-a-tarot-card-for-the-users-https-githubcom-ekelen-tarot-apitabreadme-ov-file-Uno">
+    <span class="then-i-started-to-create-my-own-chain-i-want-to-create-a-machine-that-could-generate-a-horoscope-for-people-today-it-includes-a-tarot-reading-a-lucky-color-for-today-and-also-a-meal-recipe-for-today-that-brings-luck-due-to-the-technical-issue-later-the-mealapi-changed-to-the-joke-api-first-i-check-a-free-api-that-could-generate-a-tarot-card-for-the-users-https-githubcom-ekelen-tarot-apitabreadme-ov-file-Uno-sub-0">
+    Then I started to create my own chain. I want to create a machine that could generate a horoscope for people today. It includes a tarot reading, a lucky color for today, and also a meal recipe for today that brings luck. Due to the technical issue, later the mealapi changed to the joke api.
+    <br/>
+    
+    <br/>
+    First, I check a free api that could generate a tarot card for the users. 
+    </span>
+    <span class="then-i-started-to-create-my-own-chain-i-want-to-create-a-machine-that-could-generate-a-horoscope-for-people-today-it-includes-a-tarot-reading-a-lucky-color-for-today-and-also-a-meal-recipe-for-today-that-brings-luck-due-to-the-technical-issue-later-the-mealapi-changed-to-the-joke-api-first-i-check-a-free-api-that-could-generate-a-tarot-card-for-the-users-https-githubcom-ekelen-tarot-apitabreadme-ov-file-Uno-sub-1">https://github.com/ekelen/tarot-api?tab=readme-ov-file</span>
+  </p>
+  <p class="then-i-wantedto-use-the-id-of-tarot-to-fetch-a-random-color-from-color-api-the-original-color-api-i-used-was-https-wwwthecolorapicom-scheme-S9H">
+    <span class="then-i-wantedto-use-the-id-of-tarot-to-fetch-a-random-color-from-color-api-the-original-color-api-i-used-was-https-wwwthecolorapicom-scheme-S9H-sub-0">Then, I wanted to use the id of tarot to fetch a random color from color api. The original color api I used was </span>
+    <span class="then-i-wantedto-use-the-id-of-tarot-to-fetch-a-random-color-from-color-api-the-original-color-api-i-used-was-https-wwwthecolorapicom-scheme-S9H-sub-1">https://www.thecolorapi.com/scheme</span>
+    <span class="then-i-wantedto-use-the-id-of-tarot-to-fetch-a-random-color-from-color-api-the-original-color-api-i-used-was-https-wwwthecolorapicom-scheme-S9H-sub-2">.</span>
+  </p>
+  <p class="originally-i-was-planning-to-use-meal-api-however-when-i-checked-the-json-of-the-meal-api-https-themealdbcom-apiphp-although-it-provides-the-search-method-of-using-id-the-id-is-unpredictable-and-hard-to-map-the-color-data-to-it-i-tried-to-use-a-hex-number-and-translate-it-to-an-ascii-number-but-its-too-complicated-at-this-moment-the-code-is-working-but-not-in-an-ideal-way-zyR">
+    <span class="originally-i-was-planning-to-use-meal-api-however-when-i-checked-the-json-of-the-meal-api-https-themealdbcom-apiphp-although-it-provides-the-search-method-of-using-id-the-id-is-unpredictable-and-hard-to-map-the-color-data-to-it-i-tried-to-use-a-hex-number-and-translate-it-to-an-ascii-number-but-its-too-complicated-at-this-moment-the-code-is-working-but-not-in-an-ideal-way-zyR-sub-0">Originally I was planning to use meal api , however when I checked the json of the meal api: </span>
+    <span class="originally-i-was-planning-to-use-meal-api-however-when-i-checked-the-json-of-the-meal-api-https-themealdbcom-apiphp-although-it-provides-the-search-method-of-using-id-the-id-is-unpredictable-and-hard-to-map-the-color-data-to-it-i-tried-to-use-a-hex-number-and-translate-it-to-an-ascii-number-but-its-too-complicated-at-this-moment-the-code-is-working-but-not-in-an-ideal-way-zyR-sub-1">https://themealdb.com/api.php</span>
+    <span class="originally-i-was-planning-to-use-meal-api-however-when-i-checked-the-json-of-the-meal-api-https-themealdbcom-apiphp-although-it-provides-the-search-method-of-using-id-the-id-is-unpredictable-and-hard-to-map-the-color-data-to-it-i-tried-to-use-a-hex-number-and-translate-it-to-an-ascii-number-but-its-too-complicated-at-this-moment-the-code-is-working-but-not-in-an-ideal-way-zyR-sub-2">
+    , although it provides the search method of using id, the id is unpredictable and hard to map the color data to it. I tried to use a hex number and translate it to an ASCII number, but it’s too complicated at this moment. The code is working but not in an ideal way.
+    <br/>
+    
+    </span>
+  </p>
+  <p class="in-order-to-achieve-a-better-chain-i-decided-to-find-another-api-i-changed-my-mind-that-generating-a-joke-for-people-everyday-might-also-be-a-good-idea-to-cheer-people-up-so-i-got-this-documentation-https-githubcom-15dkatz-officialjokeapi-in-this-case-i-want-to-use-the-joke-id-and-also-the-punchline-to-generate-a-joke-xKu">
+    <span class="in-order-to-achieve-a-better-chain-i-decided-to-find-another-api-i-changed-my-mind-that-generating-a-joke-for-people-everyday-might-also-be-a-good-idea-to-cheer-people-up-so-i-got-this-documentation-https-githubcom-15dkatz-officialjokeapi-in-this-case-i-want-to-use-the-joke-id-and-also-the-punchline-to-generate-a-joke-xKu-sub-0">In order to achieve a better chain, I decided to find another api. I changed my mind that generating a joke for people everyday might also be a good idea to cheer people up. So I got this documentation. </span>
+    <span class="in-order-to-achieve-a-better-chain-i-decided-to-find-another-api-i-changed-my-mind-that-generating-a-joke-for-people-everyday-might-also-be-a-good-idea-to-cheer-people-up-so-i-got-this-documentation-https-githubcom-15dkatz-officialjokeapi-in-this-case-i-want-to-use-the-joke-id-and-also-the-punchline-to-generate-a-joke-xKu-sub-1">https://github.com/15Dkatz/official_joke_api</span>
+    <span class="in-order-to-achieve-a-better-chain-i-decided-to-find-another-api-i-changed-my-mind-that-generating-a-joke-for-people-everyday-might-also-be-a-good-idea-to-cheer-people-up-so-i-got-this-documentation-https-githubcom-15dkatz-officialjokeapi-in-this-case-i-want-to-use-the-joke-id-and-also-the-punchline-to-generate-a-joke-xKu-sub-2">
+     
+    <br/>
+    
+    <br/>
+    In this case, I want to use the joke id and also the punchline to generate a joke.
+    </span>
+  </p>
+  <img class="image3-1-vxs" src="./assets/image3-1.png"/>
+  <p class="this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m">
+    <span class="this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m-sub-0">
+    This one kind of work, but I still want to try more straightforward way. 
+    <br/>
+    
+    <br/>
+    Then, I found another color api, 
+    </span>
+    <span class="this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m-sub-1">https://github.com/cheatsnake/xColors-api</span>
+    <span class="this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m-sub-2">,  </span>
+    <span class="this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m-sub-3">https://x-colors.yurace.pro/api/random</span>
+    <span class="this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m-sub-4">
+    , which coded color data in the number id. I can use any number from the range [0, 359] - which corresponds to the HUE scale. In order to get the full hue, I try to remap my card value from[0,77] to [0, 359]. And change the background color of my website according to this.
+    <br/>
+    
+    </span>
+  </p>
+  <div class="auto-group-67gp-F3R">
+    <p class="i-try-to-use-the-datacard-value-to-fetch-a-color-however-in-the-documentation-or-the-json-view-of-this-api-i-couldnt-find-any-data-that-uses-one-number-to-fetch-a-color-although-i-could-use-one-number-to-give-the-rgb-i-still-want-something-more-straightforward-ZK1">
+      <span class="i-try-to-use-the-datacard-value-to-fetch-a-color-however-in-the-documentation-or-the-json-view-of-this-api-i-couldnt-find-any-data-that-uses-one-number-to-fetch-a-color-although-i-could-use-one-number-to-give-the-rgb-i-still-want-something-more-straightforward-ZK1-sub-0">I try to use the </span>
+      <span class="i-try-to-use-the-datacard-value-to-fetch-a-color-however-in-the-documentation-or-the-json-view-of-this-api-i-couldnt-find-any-data-that-uses-one-number-to-fetch-a-color-although-i-could-use-one-number-to-give-the-rgb-i-still-want-something-more-straightforward-ZK1-sub-1">[data.card] value </span>
+      <span class="i-try-to-use-the-datacard-value-to-fetch-a-color-however-in-the-documentation-or-the-json-view-of-this-api-i-couldnt-find-any-data-that-uses-one-number-to-fetch-a-color-although-i-could-use-one-number-to-give-the-rgb-i-still-want-something-more-straightforward-ZK1-sub-2">to fetch a color, however, in the documentation or the json view of this api, I couldn’t find any data that uses one number to fetch a color. Although I could use one number to give the rgb, I still want something more straightforward. </span>
+    </p>
+    <img class="image2-1-3X1" src="./assets/image2-1.png"/>
+  </div>
+  <p class="indexthtml-aG3">[indexT.html]</p>
+  <p class="indexthtml-V87">[indexT.html]</p>
+  <p class="indextchtml-yJB">[indexTC.html]</p>
+  <p class="indextcmhtml-tAF">[indexTCM.html]</p>
+  <p class="indextcjhtml-Pco">[indexTCJ.html]</p>
+  <div class="auto-group-a7et-hNb">
+    <p class="in-the-json-file-it-showed-several-data-that-i-could-fetch-i-decided-to-have-the-value-of-the-card-name-and-meaningup-meaningrev-of-it-Drj">In the JSON file, it showed several data that I could fetch. I decided to have the value of the card, name and meaning_up/meaning_rev of it.</p>
+    <img class="image1-1-uDm" src="./assets/image1-1.png"/>
+  </div>
+  <p class="project-1-a-rube-goldberg-machine-r91">Project 1: A Rube Goldberg machine</p>
+  <p class="intro-MLf">Intro</p>
+  <p class="github-link-fcF">Github Link</p>
+  <p class="horoscope-today-ycw">Horoscope Today</p>
+  <div class="line-1-6Sf">
+  </div>
+  <div class="line-2-Rzj">
+  </div>
+  <p class="https-githubcom-lukazhuang-cretivetect4-tree-main-project1-aMq">https://github.com/lukazhuang/CretiveTect4/tree/main/Project1</p>
+</div>
+</body>

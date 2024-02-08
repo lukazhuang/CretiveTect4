@@ -1,0 +1,827 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 160rem;
+}.index-zGB {
+  width: 100%;
+  height: 973.3rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #fbebff;
+}
+.index-zGB .auto-group-97tf-YS7 {
+  width: 143.3rem;
+  height: 126rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 362.7rem;
+  display: flex;
+  align-items: center;
+}
+.index-zGB .auto-group-97tf-YS7 .specific-card-and-the-meaning-i-want-to-display-yQw {
+  margin: 0rem 6rem 14.5rem 0rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #868686;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.index-zGB .auto-group-97tf-YS7 .auto-group-xaxm-PUf {
+  width: 89.7rem;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+.index-zGB .auto-group-97tf-YS7 .auto-group-xaxm-PUf .rectangle-1-vzP {
+  width: 89.7rem;
+  height: 50.3rem;
+  position: absolute;
+  left: 0;
+  top: 54.2rem;
+  background-color: #f5cdff;
+}
+.index-zGB .auto-group-97tf-YS7 .auto-group-xaxm-PUf .doctype-html-html-langen-head-meta-charsetutf-8-meta-http-equivx-ua-compatible-contentieedge-meta-nameviewport-contentwidthdevice-width-initial-scale10-titletarot-reading-title-head-body-button-rolebutton-idinittriggerstart-button-section-idtarotsection-section-script-const-triggerbutton-documentgetelementbyidinittrigger-const-tarotsection-documentgetelementbyidtarotsection-const-taroturl-https-tarotapidev-api-v1-cards-random-let-isupright-true-flag-to-track-the-current-meaning-const-fetchtarotdata-fetchtaroturl-thenresponse-responsejson-thenpayload-appendtarotdatapayload-catcherror-consoleerrorerror-fetching-tarot-data-error-const-appendtarotdata-data-consolelogdata-if-datacards-datacardslength-0-const-card-datacards0-const-cardname-cardname-const-cardmeaning-isupright-cardmeaningup-cardmeaningrev-no-meaning-available-for-this-card-const-tarotheader-documentcreateelementh3-tarotheaderinnertext-tarot-card-cardname-const-tarotmeaning-documentcreateelementp-tarotmeaninginnertext-meaning-cardmeaning-clear-previous-content-and-append-the-new-tarot-card-information-tarotsectioninnerhtml-tarotsectionappendchildtarotheader-tarotsectionappendchildtarotmeaning-else-consoleerrorinvalid-tarot-data-received-triggerbuttonaddeventlistenerclick-isupright-isupright-fetchtarotdata-note-no-initial-fetch-on-page-load-to-ensure-the-content-is-not-displayed-before-clicking-the-button-script-body-html-3JK {
+  width: 87.4rem;
+  height: 126rem;
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3125;
+  color: #000000;
+  font-family: Fira Code, 'Source Sans Pro';
+}
+.index-zGB .auto-group-ybx9-dSs {
+  width: 143.3rem;
+  height: 19.9rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 645.7rem;
+  display: flex;
+  align-items: flex-start;
+}
+.index-zGB .auto-group-ybx9-dSs .so-i-just-tried-to-use-it-and-see-if-it-works-since-the-color-form-by-rgb-so-i-let-all-rgb-value-equal-to-tarot-number-9RD {
+  margin-right: 3.4rem;
+  max-width: 50.2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #868686;
+  font-family: Helvetica, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.index-zGB .auto-group-ybx9-dSs .auto-group-o56j-CPV {
+  box-sizing: border-box;
+  padding: 3.2rem 2rem 2rem 2rem;
+  width: 89.7rem;
+  height: 100%;
+  background-color: #f5cdff;
+  flex-shrink: 0;
+}
+.index-zGB .auto-group-ybx9-dSs .auto-group-o56j-CPV .const-generatecolorrgb-tarotnumber-use-tarot-card-number-to-generate-rgb-value-const-r-tarotnumber-const-g-tarotnumber-const-b-tarotnumber-return-rgb-VtP {
+  max-width: 44.2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3125;
+  color: #000000;
+  font-family: Fira Code, 'Source Sans Pro';
+}
+.index-zGB .auto-group-1oor-wkP {
+  width: 143.3rem;
+  height: 32.9rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 709.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+.index-zGB .auto-group-1oor-wkP .transfer-tarot-number-to-color-id-remapping-data-UVR {
+  margin-right: 20rem;
+  max-width: 33.6rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #868686;
+  font-family: Helvetica, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.index-zGB .auto-group-1oor-wkP .auto-group-luuz-zCs {
+  margin-top: 1.2rem;
+  box-sizing: border-box;
+  padding: 2.1rem 0rem 3.3rem 0rem;
+  width: 89.7rem;
+  background-color: #f5cdff;
+  flex-shrink: 0;
+}
+.index-zGB .auto-group-1oor-wkP .auto-group-luuz-zCs .const-fetchcolordata-tarotnumber-tarotnumber-mathroundmaprangetarotnumber-0-40-0-359-consolelogtarotnumber-const-colorurl-colorapiurltarotnumberformatcolorformat-return-fetchcolorurl-thenresponse-responsejson-catcherror-consoleerrorerror-fetching-color-data-error--tJF {
+  margin-bottom: 5.3rem;
+  max-width: 67.3rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3125;
+  color: #000000;
+  font-family: Fira Code, 'Source Sans Pro';
+}
+.index-zGB .auto-group-1oor-wkP .auto-group-luuz-zCs .function-maprangevalue-low1-high1-low2-high2-return-low2-high2-low2-value-low1-high1-low1-gE7 {
+  max-width: 60.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3125;
+  color: #000000;
+  font-family: Fira Code, 'Source Sans Pro';
+}
+.index-zGB .auto-group-orcx-KH5 {
+  width: 143.3rem;
+  height: 34rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 810.2rem;
+  display: flex;
+  align-items: flex-start;
+}
+.index-zGB .auto-group-orcx-KH5 .wrong-format-Rqu {
+  margin-right: 39.8rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #868686;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.index-zGB .auto-group-orcx-KH5 .auto-group-3khu-9mu {
+  box-sizing: border-box;
+  padding: 2.1rem 4.4rem 2.1rem 3.6rem;
+  height: 100%;
+  background-color: #f5cdff;
+  flex-shrink: 0;
+}
+.index-zGB .auto-group-orcx-KH5 .auto-group-3khu-9mu .if-a-z-testletter-if-the-first-letter-is-a-letter-just-use-the-letter-meallisturl-https-wwwthemealdbcom-api-json-v1-1-searchphpfletter-else-if-0-testletter-if-the-first-number-is-0-go-to-a-meallisturl-https-wwwthemealdbcom-api-json-v1-1-searchphpfa-else-if-there-is-no-letter-or-an-invalid-letter-randomly-pick-one-const-randomletter-stringfromcharcode65-mathfloormathrandom-26-meallisturl-https-wwwthemealdbcom-api-json-v1-1-searchphpfrandomletter-HNK {
+  max-width: 81.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3125;
+  color: #000000;
+  font-family: Fira Code, 'Source Sans Pro';
+}
+.index-zGB .auto-group-7fmm-ZDM {
+  width: 140.8rem;
+  height: 11.5rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 939.2rem;
+  display: flex;
+  align-items: flex-start;
+}
+.index-zGB .auto-group-7fmm-ZDM .for-the-coding-part-i-extract-the-rgbs-r-data-out-of-the-color-data-and-use-it-as-an-id-to-fetch-a-joke-tFd {
+  margin-right: 6.4rem;
+  max-width: 47.2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #868686;
+  font-family: Helvetica, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.index-zGB .auto-group-7fmm-ZDM .auto-group-pke7-MQ7 {
+  box-sizing: border-box;
+  padding: 2.1rem 0rem 1rem 0rem;
+  width: 87.2rem;
+  height: 100%;
+  background-color: #f5cdff;
+  flex-shrink: 0;
+}
+.index-zGB .auto-group-7fmm-ZDM .auto-group-pke7-MQ7 .const-rvalue-datargbsplit0slice4-extract-r-value-from-rgb-fetchjokedatarvalue-thenjokedata-appendjokedatajokedata-catcherror-consoleerrorerror-fetching-joke-data-error-VFR {
+  max-width: 72.1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3125;
+  color: #000000;
+  font-family: Fira Code, 'Source Sans Pro';
+}
+.index-zGB .auto-group-cpmd-vbd {
+  width: 143.3rem;
+  height: 9rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 747rem;
+  display: flex;
+  align-items: flex-start;
+}
+.index-zGB .auto-group-cpmd-vbd .changing-website-background-Fto {
+  margin: 0.8rem 23.2rem 0rem 0rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #868686;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.index-zGB .auto-group-cpmd-vbd .auto-group-huhh-NiX {
+  box-sizing: border-box;
+  padding: 2.8rem 0rem 2rem 0rem;
+  width: 89.7rem;
+  height: 100%;
+  background-color: #f5cdff;
+  flex-shrink: 0;
+}
+.index-zGB .auto-group-cpmd-vbd .auto-group-huhh-NiX .const-colordisplay-documentcreateelementdiv-documentbodystylebackgroundcolor-datargb-hko {
+  max-width: 49rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3125;
+  color: #000000;
+  font-family: Fira Code, 'Source Sans Pro';
+}
+.index-zGB .documentation-zV1 {
+  width: 32.8rem;
+  height: 6.1rem;
+  position: absolute;
+  left: 7rem;
+  top: 193.5rem;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.index-zGB .connect-tarot-api-Vgf {
+  width: 28.2rem;
+  height: 4.6rem;
+  position: absolute;
+  left: 7rem;
+  top: 240.1rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.index-zGB .connect-tarot-api-with-color-api-oxF {
+  width: 51.5rem;
+  height: 4.6rem;
+  position: absolute;
+  left: 7rem;
+  top: 506rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.index-zGB .connect-color-api-with-meal-api-6gT {
+  width: 50.6rem;
+  height: 4.6rem;
+  position: absolute;
+  left: 7rem;
+  top: 774.7rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.index-zGB .connect-color-api-with-joke-api-1Hd {
+  width: 50.7rem;
+  height: 4.6rem;
+  position: absolute;
+  left: 7rem;
+  top: 860.1rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.index-zGB .start-KZD {
+  width: 8rem;
+  height: 4.6rem;
+  position: absolute;
+  left: 7rem;
+  top: 209.1rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.index-zGB .diagram2-1-EgB {
+  width: 156.3rem;
+  height: 87.9rem;
+  position: absolute;
+  left: 0.8rem;
+  top: 97.2rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.index-zGB .line-3-xcB {
+  width: 143.6rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 200.8rem;
+  background-color: #000000;
+}
+.index-zGB .line-4-Vc7 {
+  width: 112.2rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 246.2rem;
+  background-color: #000000;
+}
+.index-zGB .line-6-E3u {
+  width: 112.2rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 512.1rem;
+  background-color: #000000;
+}
+.index-zGB .line-7-NA7 {
+  width: 112.2rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 780.8rem;
+  background-color: #000000;
+}
+.index-zGB .line-8-JpT {
+  width: 112.2rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 866.2rem;
+  background-color: #000000;
+}
+.index-zGB .line-5-3X9 {
+  width: 112.2rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 215.2rem;
+  background-color: #000000;
+}
+.index-zGB .at-the-beginning-of-the-project-i-used-the-example-in-the-class-to-create-a-chain-cocktail-nasa-meal-recipe-indexpratice2html-BNT {
+  width: 79.2rem;
+  height: 12.1rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 217.2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.1499023438;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .at-the-beginning-of-the-project-i-used-the-example-in-the-class-to-create-a-chain-cocktail-nasa-meal-recipe-indexpratice2html-BNT .at-the-beginning-of-the-project-i-used-the-example-in-the-class-to-create-a-chain-cocktail-nasa-meal-recipe-indexpratice2html-BNT-sub-0 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .at-the-beginning-of-the-project-i-used-the-example-in-the-class-to-create-a-chain-cocktail-nasa-meal-recipe-indexpratice2html-BNT .at-the-beginning-of-the-project-i-used-the-example-in-the-class-to-create-a-chain-cocktail-nasa-meal-recipe-indexpratice2html-BNT-sub-1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  text-decoration-line: underline;
+  color: #cc00ff;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .then-i-started-to-create-my-own-chain-i-want-to-create-a-machine-that-could-generate-a-horoscope-for-people-today-it-includes-a-tarot-reading-a-lucky-color-for-today-and-also-a-meal-recipe-for-today-that-brings-luck-due-to-the-technical-issue-later-the-mealapi-changed-to-the-joke-api-first-i-check-a-free-api-that-could-generate-a-tarot-card-for-the-users-https-githubcom-ekelen-tarot-apitabreadme-ov-file-Uno {
+  width: 111.9rem;
+  height: 18.2rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 248.2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.1499023438;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .then-i-started-to-create-my-own-chain-i-want-to-create-a-machine-that-could-generate-a-horoscope-for-people-today-it-includes-a-tarot-reading-a-lucky-color-for-today-and-also-a-meal-recipe-for-today-that-brings-luck-due-to-the-technical-issue-later-the-mealapi-changed-to-the-joke-api-first-i-check-a-free-api-that-could-generate-a-tarot-card-for-the-users-https-githubcom-ekelen-tarot-apitabreadme-ov-file-Uno .then-i-started-to-create-my-own-chain-i-want-to-create-a-machine-that-could-generate-a-horoscope-for-people-today-it-includes-a-tarot-reading-a-lucky-color-for-today-and-also-a-meal-recipe-for-today-that-brings-luck-due-to-the-technical-issue-later-the-mealapi-changed-to-the-joke-api-first-i-check-a-free-api-that-could-generate-a-tarot-card-for-the-users-https-githubcom-ekelen-tarot-apitabreadme-ov-file-Uno-sub-0 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .then-i-started-to-create-my-own-chain-i-want-to-create-a-machine-that-could-generate-a-horoscope-for-people-today-it-includes-a-tarot-reading-a-lucky-color-for-today-and-also-a-meal-recipe-for-today-that-brings-luck-due-to-the-technical-issue-later-the-mealapi-changed-to-the-joke-api-first-i-check-a-free-api-that-could-generate-a-tarot-card-for-the-users-https-githubcom-ekelen-tarot-apitabreadme-ov-file-Uno .then-i-started-to-create-my-own-chain-i-want-to-create-a-machine-that-could-generate-a-horoscope-for-people-today-it-includes-a-tarot-reading-a-lucky-color-for-today-and-also-a-meal-recipe-for-today-that-brings-luck-due-to-the-technical-issue-later-the-mealapi-changed-to-the-joke-api-first-i-check-a-free-api-that-could-generate-a-tarot-card-for-the-users-https-githubcom-ekelen-tarot-apitabreadme-ov-file-Uno-sub-1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  text-decoration-line: underline;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .then-i-wantedto-use-the-id-of-tarot-to-fetch-a-random-color-from-color-api-the-original-color-api-i-used-was-https-wwwthecolorapicom-scheme-S9H {
+  width: 107.1rem;
+  height: 6.1rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 516.7rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.1499023438;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .then-i-wantedto-use-the-id-of-tarot-to-fetch-a-random-color-from-color-api-the-original-color-api-i-used-was-https-wwwthecolorapicom-scheme-S9H .then-i-wantedto-use-the-id-of-tarot-to-fetch-a-random-color-from-color-api-the-original-color-api-i-used-was-https-wwwthecolorapicom-scheme-S9H-sub-0 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .then-i-wantedto-use-the-id-of-tarot-to-fetch-a-random-color-from-color-api-the-original-color-api-i-used-was-https-wwwthecolorapicom-scheme-S9H .then-i-wantedto-use-the-id-of-tarot-to-fetch-a-random-color-from-color-api-the-original-color-api-i-used-was-https-wwwthecolorapicom-scheme-S9H-sub-1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  text-decoration-line: underline;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .then-i-wantedto-use-the-id-of-tarot-to-fetch-a-random-color-from-color-api-the-original-color-api-i-used-was-https-wwwthecolorapicom-scheme-S9H .then-i-wantedto-use-the-id-of-tarot-to-fetch-a-random-color-from-color-api-the-original-color-api-i-used-was-https-wwwthecolorapicom-scheme-S9H-sub-2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .originally-i-was-planning-to-use-meal-api-however-when-i-checked-the-json-of-the-meal-api-https-themealdbcom-apiphp-although-it-provides-the-search-method-of-using-id-the-id-is-unpredictable-and-hard-to-map-the-color-data-to-it-i-tried-to-use-a-hex-number-and-translate-it-to-an-ascii-number-but-its-too-complicated-at-this-moment-the-code-is-working-but-not-in-an-ideal-way-zyR {
+  width: 112.3rem;
+  height: 12.1rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 785.4rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.1499023438;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .originally-i-was-planning-to-use-meal-api-however-when-i-checked-the-json-of-the-meal-api-https-themealdbcom-apiphp-although-it-provides-the-search-method-of-using-id-the-id-is-unpredictable-and-hard-to-map-the-color-data-to-it-i-tried-to-use-a-hex-number-and-translate-it-to-an-ascii-number-but-its-too-complicated-at-this-moment-the-code-is-working-but-not-in-an-ideal-way-zyR .originally-i-was-planning-to-use-meal-api-however-when-i-checked-the-json-of-the-meal-api-https-themealdbcom-apiphp-although-it-provides-the-search-method-of-using-id-the-id-is-unpredictable-and-hard-to-map-the-color-data-to-it-i-tried-to-use-a-hex-number-and-translate-it-to-an-ascii-number-but-its-too-complicated-at-this-moment-the-code-is-working-but-not-in-an-ideal-way-zyR-sub-0 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .originally-i-was-planning-to-use-meal-api-however-when-i-checked-the-json-of-the-meal-api-https-themealdbcom-apiphp-although-it-provides-the-search-method-of-using-id-the-id-is-unpredictable-and-hard-to-map-the-color-data-to-it-i-tried-to-use-a-hex-number-and-translate-it-to-an-ascii-number-but-its-too-complicated-at-this-moment-the-code-is-working-but-not-in-an-ideal-way-zyR .originally-i-was-planning-to-use-meal-api-however-when-i-checked-the-json-of-the-meal-api-https-themealdbcom-apiphp-although-it-provides-the-search-method-of-using-id-the-id-is-unpredictable-and-hard-to-map-the-color-data-to-it-i-tried-to-use-a-hex-number-and-translate-it-to-an-ascii-number-but-its-too-complicated-at-this-moment-the-code-is-working-but-not-in-an-ideal-way-zyR-sub-1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  text-decoration-line: underline;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .originally-i-was-planning-to-use-meal-api-however-when-i-checked-the-json-of-the-meal-api-https-themealdbcom-apiphp-although-it-provides-the-search-method-of-using-id-the-id-is-unpredictable-and-hard-to-map-the-color-data-to-it-i-tried-to-use-a-hex-number-and-translate-it-to-an-ascii-number-but-its-too-complicated-at-this-moment-the-code-is-working-but-not-in-an-ideal-way-zyR .originally-i-was-planning-to-use-meal-api-however-when-i-checked-the-json-of-the-meal-api-https-themealdbcom-apiphp-although-it-provides-the-search-method-of-using-id-the-id-is-unpredictable-and-hard-to-map-the-color-data-to-it-i-tried-to-use-a-hex-number-and-translate-it-to-an-ascii-number-but-its-too-complicated-at-this-moment-the-code-is-working-but-not-in-an-ideal-way-zyR-sub-2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .in-order-to-achieve-a-better-chain-i-decided-to-find-another-api-i-changed-my-mind-that-generating-a-joke-for-people-everyday-might-also-be-a-good-idea-to-cheer-people-up-so-i-got-this-documentation-https-githubcom-15dkatz-officialjokeapi-in-this-case-i-want-to-use-the-joke-id-and-also-the-punchline-to-generate-a-joke-xKu {
+  width: 111.4rem;
+  height: 15.1rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 870.8rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.1499023438;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .in-order-to-achieve-a-better-chain-i-decided-to-find-another-api-i-changed-my-mind-that-generating-a-joke-for-people-everyday-might-also-be-a-good-idea-to-cheer-people-up-so-i-got-this-documentation-https-githubcom-15dkatz-officialjokeapi-in-this-case-i-want-to-use-the-joke-id-and-also-the-punchline-to-generate-a-joke-xKu .in-order-to-achieve-a-better-chain-i-decided-to-find-another-api-i-changed-my-mind-that-generating-a-joke-for-people-everyday-might-also-be-a-good-idea-to-cheer-people-up-so-i-got-this-documentation-https-githubcom-15dkatz-officialjokeapi-in-this-case-i-want-to-use-the-joke-id-and-also-the-punchline-to-generate-a-joke-xKu-sub-0 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .in-order-to-achieve-a-better-chain-i-decided-to-find-another-api-i-changed-my-mind-that-generating-a-joke-for-people-everyday-might-also-be-a-good-idea-to-cheer-people-up-so-i-got-this-documentation-https-githubcom-15dkatz-officialjokeapi-in-this-case-i-want-to-use-the-joke-id-and-also-the-punchline-to-generate-a-joke-xKu .in-order-to-achieve-a-better-chain-i-decided-to-find-another-api-i-changed-my-mind-that-generating-a-joke-for-people-everyday-might-also-be-a-good-idea-to-cheer-people-up-so-i-got-this-documentation-https-githubcom-15dkatz-officialjokeapi-in-this-case-i-want-to-use-the-joke-id-and-also-the-punchline-to-generate-a-joke-xKu-sub-1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  text-decoration-line: underline;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .in-order-to-achieve-a-better-chain-i-decided-to-find-another-api-i-changed-my-mind-that-generating-a-joke-for-people-everyday-might-also-be-a-good-idea-to-cheer-people-up-so-i-got-this-documentation-https-githubcom-15dkatz-officialjokeapi-in-this-case-i-want-to-use-the-joke-id-and-also-the-punchline-to-generate-a-joke-xKu .in-order-to-achieve-a-better-chain-i-decided-to-find-another-api-i-changed-my-mind-that-generating-a-joke-for-people-everyday-might-also-be-a-good-idea-to-cheer-people-up-so-i-got-this-documentation-https-githubcom-15dkatz-officialjokeapi-in-this-case-i-want-to-use-the-joke-id-and-also-the-punchline-to-generate-a-joke-xKu-sub-2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .image3-1-vxs {
+  width: 87.2rem;
+  height: 32.6rem;
+  position: absolute;
+  left: 60.7rem;
+  top: 893.8rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.index-zGB .this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m {
+  width: 111.9rem;
+  height: 18.2rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 677.8rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.1499023438;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m .this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m-sub-0 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m .this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m-sub-1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  text-decoration-line: underline;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m .this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m-sub-2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m .this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m-sub-3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  text-decoration-line: underline;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m .this-one-kind-of-work-but-i-still-want-to-try-more-straightforward-way-then-i-found-another-color-api-https-githubcom-cheatsnake-xcolors-api-https-x-colorsyuracepro-api-random-which-coded-color-data-in-the-number-id-i-can-use-any-number-from-the-range-0-359-which-corresponds-to-the-hue-scale-in-order-to-get-the-full-hue-i-try-to-remap-my-card-value-from077-to-0-359-and-change-the-background-color-of-my-website-according-to-this-f9m-sub-4 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .auto-group-67gp-F3R {
+  width: 143.3rem;
+  height: 92.9rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 536.6rem;
+  display: flex;
+  align-items: flex-start;
+}
+.index-zGB .auto-group-67gp-F3R .i-try-to-use-the-datacard-value-to-fetch-a-color-however-in-the-documentation-or-the-json-view-of-this-api-i-couldnt-find-any-data-that-uses-one-number-to-fetch-a-color-although-i-could-use-one-number-to-give-the-rgb-i-still-want-something-more-straightforward-ZK1 {
+  margin-right: 2.3rem;
+  max-width: 51.4rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.1499023438;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.index-zGB .auto-group-67gp-F3R .i-try-to-use-the-datacard-value-to-fetch-a-color-however-in-the-documentation-or-the-json-view-of-this-api-i-couldnt-find-any-data-that-uses-one-number-to-fetch-a-color-although-i-could-use-one-number-to-give-the-rgb-i-still-want-something-more-straightforward-ZK1 .i-try-to-use-the-datacard-value-to-fetch-a-color-however-in-the-documentation-or-the-json-view-of-this-api-i-couldnt-find-any-data-that-uses-one-number-to-fetch-a-color-although-i-could-use-one-number-to-give-the-rgb-i-still-want-something-more-straightforward-ZK1-sub-0 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .auto-group-67gp-F3R .i-try-to-use-the-datacard-value-to-fetch-a-color-however-in-the-documentation-or-the-json-view-of-this-api-i-couldnt-find-any-data-that-uses-one-number-to-fetch-a-color-although-i-could-use-one-number-to-give-the-rgb-i-still-want-something-more-straightforward-ZK1 .i-try-to-use-the-datacard-value-to-fetch-a-color-however-in-the-documentation-or-the-json-view-of-this-api-i-couldnt-find-any-data-that-uses-one-number-to-fetch-a-color-although-i-could-use-one-number-to-give-the-rgb-i-still-want-something-more-straightforward-ZK1-sub-1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .auto-group-67gp-F3R .i-try-to-use-the-datacard-value-to-fetch-a-color-however-in-the-documentation-or-the-json-view-of-this-api-i-couldnt-find-any-data-that-uses-one-number-to-fetch-a-color-although-i-could-use-one-number-to-give-the-rgb-i-still-want-something-more-straightforward-ZK1 .i-try-to-use-the-datacard-value-to-fetch-a-color-however-in-the-documentation-or-the-json-view-of-this-api-i-couldnt-find-any-data-that-uses-one-number-to-fetch-a-color-although-i-could-use-one-number-to-give-the-rgb-i-still-want-something-more-straightforward-ZK1-sub-2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+}
+.index-zGB .auto-group-67gp-F3R .image2-1-3X1 {
+  margin-top: 0.6rem;
+  width: 89.6rem;
+  height: 92.3rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.index-zGB .indexthtml-aG3 {
+  width: 19.9rem;
+  height: 4.6rem;
+  position: absolute;
+  left: 60.7rem;
+  top: 354.4rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  text-decoration-line: underline;
+  color: #cc00ff;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.index-zGB .indexthtml-V87 {
+  width: 19.9rem;
+  height: 4.6rem;
+  position: absolute;
+  left: 60.7rem;
+  top: 638.4rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  text-decoration-line: underline;
+  color: #cc00ff;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.index-zGB .indextchtml-yJB {
+  width: 22.2rem;
+  height: 4.6rem;
+  position: absolute;
+  left: 60.7rem;
+  top: 704.1rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  text-decoration-line: underline;
+  color: #cc00ff;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.index-zGB .indextcmhtml-tAF {
+  width: 24.8rem;
+  height: 4.6rem;
+  position: absolute;
+  left: 60.7rem;
+  top: 804rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  text-decoration-line: underline;
+  color: #cc00ff;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.index-zGB .indextcjhtml-Pco {
+  width: 23.8rem;
+  height: 4.6rem;
+  position: absolute;
+  left: 60.7rem;
+  top: 933rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  text-decoration-line: underline;
+  color: #cc00ff;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.index-zGB .auto-group-a7et-hNb {
+  width: 143.6rem;
+  height: 70.7rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 276.7rem;
+  display: flex;
+  align-items: flex-start;
+}
+.index-zGB .auto-group-a7et-hNb .in-the-json-file-it-showed-several-data-that-i-could-fetch-i-decided-to-have-the-value-of-the-card-name-and-meaningup-meaningrev-of-it-Drj {
+  margin-right: 2.3rem;
+  max-width: 51.3rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.index-zGB .auto-group-a7et-hNb .image1-1-uDm {
+  width: 90rem;
+  height: 70.7rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.index-zGB .project-1-a-rube-goldberg-machine-r91 {
+  width: 100.5rem;
+  height: 8.1rem;
+  position: absolute;
+  left: 7rem;
+  top: 7.5rem;
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.index-zGB .intro-MLf {
+  width: 10.6rem;
+  height: 6.1rem;
+  position: absolute;
+  left: 7rem;
+  top: 84.7rem;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.index-zGB .github-link-fcF {
+  width: 24.6rem;
+  height: 6.1rem;
+  position: absolute;
+  left: 7rem;
+  top: 59.8rem;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.index-zGB .horoscope-today-ycw {
+  width: 36.3rem;
+  height: 6.1rem;
+  position: absolute;
+  left: 58.7rem;
+  top: 34.6rem;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  text-decoration-line: underline;
+  color: #cc00ff;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.index-zGB .line-1-6Sf {
+  width: 143.6rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 92rem;
+  background-color: #000000;
+}
+.index-zGB .line-2-Rzj {
+  width: 143.6rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 67.1rem;
+  background-color: #000000;
+}
+.index-zGB .https-githubcom-lukazhuang-cretivetect4-tree-main-project1-aMq {
+  width: 97.1rem;
+  height: 4.6rem;
+  position: absolute;
+  left: 7.1rem;
+  top: 69.9rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  text-decoration-line: underline;
+  color: #000000;
+  font-family: Helvetica, 'Source Sans Pro';
+  white-space: nowrap;
+}
