@@ -89,8 +89,6 @@
     }
 }
 
-
-
         function map_range(value, low1, high1, low2, high2) {
             return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
         }
@@ -129,13 +127,13 @@
 
             if (data.setup) {
                 const jokeHeader = document.createElement('h3');
-                jokeHeader.innerText = "Joke Data";
+                jokeHeader.innerText = "Today's Joke";
 
                 const jokeSetup = document.createElement('p');
-                jokeSetup.innerText = `Joke: ${data.setup}`;
+                jokeSetup.innerText = `${data.setup}`;
 
                 const jokePunchline = document.createElement('p');
-                jokePunchline.innerText = `Punchline: ${data.punchline}`;
+                jokePunchline.innerText = `${data.punchline}`;
 
                 // Clear previous content and append the new joke data
                 jokeSection.innerHTML = '';
