@@ -3,16 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project1</title>
+    <title>Tarot Reading</title>
 </head>
 
 <body>
-    <h1 style="font-family: Arial, Helvetica, sans-serif;">Project 1: A Rube Goldberg machine</h1>
-    <p style="text-align:center;"><img src="Diagram2.png" width="1700px" alt="diagram" /></p>
-
-    <h1 style="font-family: Arial, Helvetica, sans-serif;">Tarot Reading</h1>
-    <button role="button" id="initTrigger">Flip the Card</button>
+    <button role="button" id="initTrigger">START!</button>
     <section id="tarotSection"></section>
     <section id="colorSection"></section>
     <section id="jokeSection"></section>
@@ -130,13 +127,13 @@
 
             if (data.setup) {
                 const jokeHeader = document.createElement('h3');
-                jokeHeader.innerText = "Joke Data";
+                jokeHeader.innerText = "Today's Joke";
 
                 const jokeSetup = document.createElement('p');
-                jokeSetup.innerText = `Joke: ${data.setup}`;
+                jokeSetup.innerText = `${data.setup}`;
 
                 const jokePunchline = document.createElement('p');
-                jokePunchline.innerText = `Punchline: ${data.punchline}`;
+                jokePunchline.innerText = `${data.punchline}`;
 
                 // Clear previous content and append the new joke data
                 jokeSection.innerHTML = '';
@@ -147,7 +144,6 @@
                 console.error('Invalid joke data received.');
             }
         }
-
 
         triggerButton.addEventListener("click", fetchTarotData);
     </script>
