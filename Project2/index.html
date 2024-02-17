@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Tect 4: Project 2-Chatbot</title>
+    <style>
+        body {
+            max-width: 1920px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: "Arial", sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #000000;
+        }
+        h2 {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Creative Tect 4: Project 2-Chatbot</h1>
+    <p>In this project, I am planning to make a chatbot that helps you decide what to eat for today. It is always difficult for me to choose what to eat, and I hope there will be a bot that can recommend something to eat.</p>
+    <p>At the beginning of the project, while I haven’t planned what characteristics or UI might have, I want to first explore how to connect my bot with an API.</p>
+
+    <h2>Connecting API</h2>
+    <hr>
+    <p>First, I choose mealAPI for the resource and import this as an html/json link. I want people to have two options, one for the random selection of the meal, and one you could select by category. So fetch these two functions from the mealAPI.</p>
+    <img src="images/image5.png" alt="Meal API" />
+
+    <p>Then, as I said there would be two functions, I would provide two buttons for people to click. When I type in "What to eat" or @ the bot, it would automatically come out the two buttons.</p>
+    <img src="images/image3.png" alt="Bot Buttons" />
+
+    <h2>Set up class and buttons</h2>
+    <hr>
+    <p>The first one is the random select function. Basically, if people clicked the button I set up, it would automatically give you a random recipe, including the name of the dish, how to cook it, and the image of it.</p>
+    <img src="images/image1.png" alt="Random Recipe" />
+
+    <p>After setting up this button, the result would be like this:</p>
+    <img src="images/image4.png" alt="Random Recipe Result" />
+    
+    <p>The second option would be, selecting the category for the recipe. Click this button, a drop-down menu would pop up, that using the category, after fetching in the API:</p>
+    <img src="images/image2.png" alt="Category Selection" />
+
+    <p>The result would look like this:</p>
+    <img src="images/image7.png" alt="Category Result" />
+    <img src="images/image8.png" alt="Category Result" />
+
+    <p>However, for the first week, I was still having trouble fetching a random meal inside the category. I might have to revisit the API JSON to check up what exactly the functions were called, and I am not sure if they could still provide a random meal inside the category.</p>
+</body>
+</html>
