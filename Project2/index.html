@@ -1,59 +1,981 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Tect 4: Project 2-Chatbot</title>
-    <style>
-        body {
-            max-width: 1920px;
-            margin: 0 auto;
-            padding: 20px;
-            font-family: "Arial", sans-serif;
-            font-size: 16px;
-            line-height: 1.5;
-            color: #000000;
-        }
-        h2 {
-            font-size: 24px;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Creative Tect 4: Project 2-Chatbot</h1>
-    <p>In this project, I am planning to make a chatbot that helps you decide what to eat for today. It is always difficult for me to choose what to eat, and I hope there will be a bot that can recommend something to eat.</p>
-    <p>At the beginning of the project, while I haven’t planned what characteristics or UI might have, I want to first explore how to connect my bot with an API.</p>
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+        <style type="text/css">
+            @import url(https://themes.googleusercontent.com/fonts/css?kit=4h30xWtrfYlMe1UUm4mV7w);ol.lst-kix_1u6jgus0zmr-3.start {
+                counter-reset: lst-ctn-kix_1u6jgus0zmr-3 0
+            }
 
-    <h2>Connecting API</h2>
-    <hr>
-    <p>First, I choose mealAPI for the resource and import this as an html/json link. I want people to have two options, one for the random selection of the meal, and one you could select by category. So fetch these two functions from the mealAPI.</p>
-    <img src="images/image5.png" alt="Meal API" />
+            ol.lst-kix_1u6jgus0zmr-4 {
+                list-style-type: none
+            }
 
-    <p>Then, as I said there would be two functions, I would provide two buttons for people to click. When I type in "What to eat" or @ the bot, it would automatically come out the two buttons.</p>
-    <img src="images/image3.png" alt="Bot Buttons" />
+            .lst-kix_1u6jgus0zmr-4>li {
+                counter-increment: lst-ctn-kix_1u6jgus0zmr-4
+            }
 
-    <h2>Set up class and buttons</h2>
-    <hr>
-    <p>The first one is the random select function. Basically, if people clicked the button I set up, it would automatically give you a random recipe, including the name of the dish, how to cook it, and the image of it.</p>
-    <img src="images/image1.png" alt="Random Recipe" />
+            ol.lst-kix_1u6jgus0zmr-3 {
+                list-style-type: none
+            }
 
-    <p>After setting up this button, the result would be like this:</p>
-    <img src="images/image4.png" alt="Random Recipe Result" />
-    
-    <p>The second option would be, selecting the category for the recipe. Click this button, a drop-down menu would pop up, that using the category, after fetching in the API:</p>
-    <img src="images/image2.png" alt="Category Selection" />
+            .lst-kix_1u6jgus0zmr-7>li {
+                counter-increment: lst-ctn-kix_1u6jgus0zmr-7
+            }
 
-    <p>The result would look like this:</p>
-    <img src="images/image7.png" alt="Category Result" />
-    <img src="images/image8.png" alt="Category Result" />
+            .lst-kix_1u6jgus0zmr-1>li {
+                counter-increment: lst-ctn-kix_1u6jgus0zmr-1
+            }
 
-    <p>However, for the first week, I was still having trouble fetching a random meal inside the category. I might have to revisit the API JSON to check up what exactly the functions were called, and I am not sure if they could still provide a random meal inside the category.</p>
-</body>
+            ol.lst-kix_1u6jgus0zmr-6 {
+                list-style-type: none
+            }
+
+            ol.lst-kix_1u6jgus0zmr-5 {
+                list-style-type: none
+            }
+
+            ol.lst-kix_1u6jgus0zmr-0 {
+                list-style-type: none
+            }
+
+            ol.lst-kix_1u6jgus0zmr-2 {
+                list-style-type: none
+            }
+
+            ol.lst-kix_1u6jgus0zmr-1 {
+                list-style-type: none
+            }
+
+            ol.lst-kix_1u6jgus0zmr-1.start {
+                counter-reset: lst-ctn-kix_1u6jgus0zmr-1 0
+            }
+
+            ol.lst-kix_1u6jgus0zmr-5.start {
+                counter-reset: lst-ctn-kix_1u6jgus0zmr-5 0
+            }
+
+            ol.lst-kix_1u6jgus0zmr-8 {
+                list-style-type: none
+            }
+
+            ol.lst-kix_1u6jgus0zmr-7 {
+                list-style-type: none
+            }
+
+            ol.lst-kix_1u6jgus0zmr-7.start {
+                counter-reset: lst-ctn-kix_1u6jgus0zmr-7 0
+            }
+
+            .lst-kix_1u6jgus0zmr-0>li:before {
+                content: "" counter(lst-ctn-kix_1u6jgus0zmr-0,decimal) ". "
+            }
+
+            .lst-kix_1u6jgus0zmr-2>li:before {
+                content: "" counter(lst-ctn-kix_1u6jgus0zmr-2,lower-roman) ". "
+            }
+
+            ol.lst-kix_1u6jgus0zmr-2.start {
+                counter-reset: lst-ctn-kix_1u6jgus0zmr-2 0
+            }
+
+            ol.lst-kix_1u6jgus0zmr-4.start {
+                counter-reset: lst-ctn-kix_1u6jgus0zmr-4 0
+            }
+
+            .lst-kix_1u6jgus0zmr-8>li {
+                counter-increment: lst-ctn-kix_1u6jgus0zmr-8
+            }
+
+            .lst-kix_1u6jgus0zmr-3>li {
+                counter-increment: lst-ctn-kix_1u6jgus0zmr-3
+            }
+
+            .lst-kix_1u6jgus0zmr-5>li {
+                counter-increment: lst-ctn-kix_1u6jgus0zmr-5
+            }
+
+            .lst-kix_1u6jgus0zmr-1>li:before {
+                content: "" counter(lst-ctn-kix_1u6jgus0zmr-1,lower-latin) ". "
+            }
+
+            .lst-kix_1u6jgus0zmr-0>li {
+                counter-increment: lst-ctn-kix_1u6jgus0zmr-0
+            }
+
+            ol.lst-kix_1u6jgus0zmr-0.start {
+                counter-reset: lst-ctn-kix_1u6jgus0zmr-0 0
+            }
+
+            ol.lst-kix_1u6jgus0zmr-6.start {
+                counter-reset: lst-ctn-kix_1u6jgus0zmr-6 0
+            }
+
+            .lst-kix_1u6jgus0zmr-7>li:before {
+                content: "" counter(lst-ctn-kix_1u6jgus0zmr-7,lower-latin) ". "
+            }
+
+            .lst-kix_1u6jgus0zmr-8>li:before {
+                content: "" counter(lst-ctn-kix_1u6jgus0zmr-8,lower-roman) ". "
+            }
+
+            .lst-kix_1u6jgus0zmr-2>li {
+                counter-increment: lst-ctn-kix_1u6jgus0zmr-2
+            }
+
+            .lst-kix_1u6jgus0zmr-6>li {
+                counter-increment: lst-ctn-kix_1u6jgus0zmr-6
+            }
+
+            .lst-kix_1u6jgus0zmr-6>li:before {
+                content: "" counter(lst-ctn-kix_1u6jgus0zmr-6,decimal) ". "
+            }
+
+            .lst-kix_1u6jgus0zmr-3>li:before {
+                content: "" counter(lst-ctn-kix_1u6jgus0zmr-3,decimal) ". "
+            }
+
+            .lst-kix_1u6jgus0zmr-4>li:before {
+                content: "" counter(lst-ctn-kix_1u6jgus0zmr-4,lower-latin) ". "
+            }
+
+            ol.lst-kix_1u6jgus0zmr-8.start {
+                counter-reset: lst-ctn-kix_1u6jgus0zmr-8 0
+            }
+
+            .lst-kix_1u6jgus0zmr-5>li:before {
+                content: "" counter(lst-ctn-kix_1u6jgus0zmr-5,lower-roman) ". "
+            }
+
+            ol {
+                margin: 0;
+                padding: 0
+            }
+
+            table td,table th {
+                padding: 0
+            }
+
+            .c11 {
+                background-color: #efefef;
+                color: #000000;
+                font-weight: 600;
+                text-decoration: none;
+                vertical-align: baseline;
+                font-size: 18pt;
+                font-family: "Spectral";
+                font-style: normal
+            }
+
+            .c13 {
+                color: #666666;
+                font-weight: 400;
+                text-decoration: none;
+                vertical-align: baseline;
+                font-size: 22pt;
+                font-family: "Arial";
+                font-style: normal
+            }
+
+            .c2 {
+                color: #000000;
+                font-weight: 400;
+                text-decoration: none;
+                vertical-align: baseline;
+                font-size: 11pt;
+                font-family: "Arial";
+                font-style: normal
+            }
+
+            .c14 {
+                padding-top: 0pt;
+                padding-bottom: 16pt;
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            .c9 {
+                color: #000000;
+                font-weight: 400;
+                text-decoration: none;
+                vertical-align: baseline;
+                font-size: 16pt;
+                font-family: "Arial";
+                font-style: normal
+            }
+
+            .c10 {
+                padding-top: 18pt;
+                padding-bottom: 6pt;
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            .c0 {
+                padding-top: 0pt;
+                padding-bottom: 3pt;
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            .c4 {
+                color: #00a67d;
+                font-weight: 400;
+                text-decoration: none;
+                vertical-align: baseline;
+                font-size: 10pt;
+                font-family: "Courier New";
+                font-style: normal
+            }
+
+            .c3 {
+                padding-top: 0pt;
+                padding-bottom: 0pt;
+                line-height: 1.15;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            .c8 {
+                text-decoration-skip-ink: none;
+                -webkit-text-decoration-skip: none;
+                color: #1155cc;
+                text-decoration: underline
+            }
+
+            .c5 {
+                color: #00a67d;
+                text-decoration: none;
+                vertical-align: baseline;
+                font-style: normal
+            }
+
+            .c6 {
+                font-weight: 400;
+                font-size: 11pt;
+                font-family: "Courier New"
+            }
+
+            .c18 {
+                background-color: #ffffff;
+                max-width: 1080px;
+                padding: 72pt 72pt 72pt 72pt
+            }
+
+            .c19 {
+                font-weight: 400;
+                font-size: 11pt;
+                font-family: "Arial"
+            }
+
+            .c1 {
+                font-size: 10.5pt;
+                font-family: "Courier New";
+                font-weight: 400
+            }
+
+            .c17 {
+                color: inherit;
+                text-decoration: inherit
+            }
+
+            .c16 {
+                height: 16pt
+            }
+
+            .c12 {
+                font-size: 17pt
+            }
+
+            .c7 {
+                height: 11pt
+            }
+
+            .c20 {
+                font-size: 16pt
+            }
+
+            .c15 {
+                color: #00a67d
+            }
+
+            .title {
+                padding-top: 0pt;
+                color: #000000;
+                font-size: 26pt;
+                padding-bottom: 3pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            .subtitle {
+                padding-top: 0pt;
+                color: #666666;
+                font-size: 15pt;
+                padding-bottom: 16pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            li {
+                color: #000000;
+                font-size: 11pt;
+                font-family: "Arial"
+            }
+
+            p {
+                margin: 0;
+                color: #000000;
+                font-size: 11pt;
+                font-family: "Arial"
+            }
+
+            h1 {
+                padding-top: 20pt;
+                color: #000000;
+                font-size: 20pt;
+                padding-bottom: 6pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            h2 {
+                padding-top: 18pt;
+                color: #000000;
+                font-size: 16pt;
+                padding-bottom: 6pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            h3 {
+                padding-top: 16pt;
+                color: #434343;
+                font-size: 14pt;
+                padding-bottom: 4pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            h4 {
+                padding-top: 14pt;
+                color: #666666;
+                font-size: 12pt;
+                padding-bottom: 4pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            h5 {
+                padding-top: 12pt;
+                color: #666666;
+                font-size: 11pt;
+                padding-bottom: 4pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+
+            h6 {
+                padding-top: 12pt;
+                color: #666666;
+                font-size: 11pt;
+                padding-bottom: 4pt;
+                font-family: "Arial";
+                line-height: 1.15;
+                page-break-after: avoid;
+                font-style: italic;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+        </style>
+    </head>
+    <body class="c18 doc-content">
+        <p class="c0 title" id="h.o1nq1qeak9ao">
+            <span class="c11">Creative Tect 4: Project 2-Chatbot</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <p class="c14 subtitle" id="h.m63iyoqoaym9">
+            <span class="c12">In this project, I am planning to make a chatbot that helps you decide what to eat for today. It is always difficult for me to choose what to eat and I hope there will be a bot that can recommend something to eat. At the beginning of the project, while I haven &rsquo;t planned what characteristics or UI might have, I want to first explore how to connect my bot with API.</span>
+        </p>
+        <h2 class="c10" id="h.w5f1ry92507c">
+            <span>
+                <br>
+                <br>
+                <br>
+                <br>
+            </span>
+            <span class="c9">Connecting API</span>
+        </h2>
+        <hr>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <p class="c3">
+            <span class="c2">First, I choose mealAPI for the resource and import this as an html/json link. I want people to have two options, one for the random selection of the meal, and one you could select by category. So fetch this two function from the mealAPI:</span>
+        </p>
+        <p class="c3">
+            <span class="c1">
+                <br>
+            </span>
+            <span class="c5 c1">import os</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">import discord</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">import aiohttp</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">from discord.ui import View, Select</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c5 c1"></span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">intents = discord.Intents.default()</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">intents.message_content = True</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c5 c1"></span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">client = discord.Client(intents=intents)</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c5 c1"></span>
+        </p>
+        <p class="c3 c7">
+            <span class="c5 c1"></span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">async def get_random_recipe():</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;url = &quot;https://www.themealdb.com/api/json/v1/1/random.php &quot;</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;async with aiohttp.ClientSession() as session:</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;async with session.get(url) as response:</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if response.status == 200:</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data = await response.json()</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return data[&#39;meals &#39;][0] if data[&#39;meals &#39;] else None</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return None</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c5 c1"></span>
+        </p>
+        <p class="c3 c7">
+            <span class="c5 c1"></span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">async def get_categories():</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;url = &quot;https://www.themealdb.com/api/json/v1/1/list.php?c=list &quot;</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;async with aiohttp.ClientSession() as session:</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;async with session.get(url) as response:</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if response.status == 200:</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data = await response.json()</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return [category[&#39;strCategory &#39;] for category in data[&#39;meals &#39;]]</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:</span>
+        </p>
+        <p class="c3">
+            <span class="c1 c15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return None</span>
+            <span class="c1">
+                <br>
+            </span>
+        </p>
+        <p class="c3">
+            <span>
+                Then, as I said there would be two functions, I would provide two buttons for people to click. When I type in &ldquo;What to eat &rdquo;or @ the bot, it would automatically come out the two buttons.<br>
+                <br>
+            </span>
+            <span class="c5 c1">&nbsp;&nbsp;if message.content.startswith(&quot;What to eat?&quot;):</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;our_view = MyCustomView()</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;await message.channel.send(&quot;I am here to recommend you some recipes for today!&quot;, view=our_view)</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c5 c1"></span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;if client.user in message.mentions:</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;our_view = MyCustomView()</span>
+        </p>
+        <p class="c3">
+            <span class="c1 c15">&nbsp;&nbsp;&nbsp;&nbsp;await message.channel.send(&quot;Thanks for mentioning Luka &quot;, view=our_view</span>
+            <span class="c1">)</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <h2 class="c10" id="h.k93bjofmt91y">
+            <span class="c9">Set up class and buttons</span>
+        </h2>
+        <hr>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <p class="c3">
+            <span>
+                The first one is the random select function. Basically, if people clicked the button I set up, it would automatically give you a random recipe, including the name of the dish, how to cook it and the image of it. <br>
+                <br>
+            </span>
+            <span class="c5 c1">class MyCustomView(View):</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c5 c1"></span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;def __init__(self):</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;super().__init__()</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c5 c1"></span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;@discord.ui.button(label=&quot;Random Recipe &quot;)</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;async def button_callback(self, interaction, button):</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;meal_data = await get_random_recipe()</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;if meal_data:</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name = meal_data[&#39;strMeal &#39;]</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image = meal_data[&#39;strMealThumb &#39;]</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instructions = meal_data[&#39;strInstructions &#39;]</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;response_message = f &quot;**Name:** {name}\n**Image:** {image}\n**Instructions:** {instructions}&quot;</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;else:</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;response_message = &quot;Oops! Something went wrong while fetching the random recipe.&quot;</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </p>
+        <p class="c3">
+            <span class="c1 c15">
+                &nbsp;&nbsp;&nbsp;&nbsp;await interaction.response.send_message(response_message)<br>
+                <br>
+            </span>
+        </p>
+        <p class="c3">
+            <span class="c2">After setting up this button, the result would be like this:</span>
+        </p>
+        <p class="c3">
+            <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 157.33px;">
+                <img alt="" src="images/image1.png" style="width: 624.00px; height: 157.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+            </span>
+            <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 585.33px;">
+                <img alt="" src="images/image3.png" style="width: 624.00px; height: 585.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+            </span>
+        </p>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <p class="c3">
+            <span class="c2">
+                The second option would be, selecting the category for the recipe, after click this button, a drop down menu would pop up, that using the category fetched in the API:<br>
+            </span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">@discord.ui.button(label=&quot;Select Category &quot;)</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">async def button_callback2(self, interaction, button):</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;categories = await get_categories()</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;if categories:</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;select = CustomSelect(options=[discord.SelectOption(label=category) for category in categories])</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;self.clear_items()</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;self.add_item(select)</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;await interaction.response.send_message(&quot;Select a category:&quot;, view=self)</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;else:</span>
+        </p>
+        <p class="c3">
+            <span class="c1 c15">&nbsp;&nbsp;&nbsp;&nbsp;await interaction.response.send_message(&quot;Oops! Something went wrong while fetching the categories.&quot;)</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <p class="c3">
+            <span>The result would look like this:</span>
+            <p class="c3 c7">
+                <span class="c2"></span>
+            </p>
+            <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 149.33px;">
+                <img alt="" src="images/image4.png" style="width: 624.00px; height: 149.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+            </span>
+            <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 280.00px;">
+                <img alt="" src="images/image6.png" style="width: 624.00px; height: 280.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+            </span>
+        </p>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <p class="c3">
+            <span class="c2">However, for the first week, I was still having trouble fetching a random meal inside the category. I might have to revisit the API json to check up what exactly the functions were called, and I am not sure if they could still provide a random mean inside the category.</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <h2 class="c10 c16" id="h.gc2vheh5obzr">
+            <span class="c9"></span>
+        </h2>
+        <h2 class="c10" id="h.h7bfw47g2bcl">
+            <span>Further development</span>
+            <hr>
+        </h2>
+        <p class="c3">
+            <span>
+                In this case, I cannot fix the problem of the drop down and I was interested in connecting the bot to the API again, so I changed my direction to add another API. In this case, I want to shape the conversation with the bot like, the users who are rude customers that the bot wants to satisfy them. <br>
+                <br>
+                During the conversation, if the users are not satisfied with the first recommendation, to let angry customers cool down, the bot will recommend a cocktail for them. So I tried to connect the cocktail api.<br>
+                <br>
+            </span>
+            <span class="c5 c1">async def get_random_cocktail():</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;url = &quot;https://www.thecocktaildb.com/api/json/v1/1/random.php &quot;</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;async with aiohttp.ClientSession() as session:</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;async with session.get(url) as response:</span>
+        </p>
+        <p class="c3">
+            <span class="c1 c5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if response.status == 200:</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data = await response.json()</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return data[&#39;drinks &#39;][0] if data[&#39;drinks &#39;] else None</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:</span>
+        </p>
+        <p class="c3">
+            <span class="c1 c15">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return None<br>
+            </span>
+        </p>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <p class="c3">
+            <span>
+                After fetching the data from the API, I started to write down the conversation and the reaction I mentioned before:<br>
+                <br>
+            </span>
+            <span class="c4">follow_up_view = FollowUpView()</span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;follow_up_message = await interaction.followup.send(&quot;Did you satisfy with my recommendation?&quot;, view=follow_up_view)</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c4"></span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;# Update the follow-up view with the message reference for callback</span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;follow_up_view.message_reference = follow_up_message.to_reference()</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c4"></span>
+        </p>
+        <p class="c3 c7">
+            <span class="c4"></span>
+        </p>
+        <p class="c3">
+            <span class="c4">class FollowUpView(discord.ui.View):</span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;def __init__(self):</span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;super().__init__()</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c4"></span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;@discord.ui.button(label=&quot;Yes &quot;)</span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;async def yes_button_callback(self, interaction, button):</span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;await interaction.response.send_message(&quot;Great to hear!&quot;)</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c4"></span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;@discord.ui.button(label=&quot;Not at all! I don &#39;t like your recommendation!&quot;, emoji=&quot;&#128545;&quot;) &nbsp;# Add the angry emoji</span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;async def no_button_callback(self, interaction, button):</span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;cocktail_data = await get_random_cocktail()</span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;if cocktail_data:</span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name = cocktail_data[&#39;strDrink &#39;]</span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image = cocktail_data[&#39;strDrinkThumb &#39;]</span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;response_message = f &quot;To show my apology, please try this cocktail:\n**Name:** {name}\n**Image:** {image}&quot;</span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;else:</span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;response_message = &quot;Oops! Something went wrong while fetching the random cocktail.&quot;</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c4"></span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;# Send the cocktail recommendation as a new message</span>
+        </p>
+        <p class="c3">
+            <span class="c4">&nbsp;&nbsp;&nbsp;&nbsp;await interaction.response.send_message(response_message)</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <p class="c3">
+            <span>And this is what the conversation looks like:</span>
+        </p>
+        <p class="c3">
+            <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 661.02px; height: 565.29px;">
+                <img alt="" src="images/image2.png" style="width: 661.02px; height: 565.29px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+            </span>
+        </p>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <p class="c3">
+            <span>After this, I would like to add one more conversation</span>
+            <span>, like</span>
+            <span class="c2">&nbsp;the customer was still not satisfied with the result and felt angry constantly, the bot got angry too and refused service. Here is the follow up conversation:</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <p class="c3">
+            <span class="c5 c6">&nbsp;cocktail_follow_up_view = CocktailFollowUpView()</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c6">&nbsp;&nbsp;&nbsp;&nbsp;cocktail_follow_up_message = await interaction.followup.send(</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Are you satisfied with my cocktail recommendation?&quot;, view=cocktail_follow_up_view</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c6">&nbsp;&nbsp;&nbsp;&nbsp;)</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c5 c6"></span>
+        </p>
+        <p class="c3">
+            <span class="c5 c6">&nbsp;&nbsp;&nbsp;&nbsp;# Update the cocktail follow-up view with the message reference for callback</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c6">&nbsp;&nbsp;&nbsp;&nbsp;cocktail_follow_up_view.message_reference = cocktail_follow_up_message.to_reference()</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c5 c6"></span>
+        </p>
+        <p class="c3 c7">
+            <span class="c5 c6"></span>
+        </p>
+        <p class="c3">
+            <span class="c5 c6">class CocktailFollowUpView(discord.ui.View):</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c6">&nbsp;&nbsp;def __init__(self):</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c6">&nbsp;&nbsp;&nbsp;&nbsp;super().__init__()</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c5 c6"></span>
+        </p>
+        <p class="c3">
+            <span class="c5 c6">&nbsp;&nbsp;@discord.ui.button(label=&quot;Yes! I feel better &quot;)</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c6">&nbsp;&nbsp;async def yes_button_callback(self, interaction, button):</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c6">&nbsp;&nbsp;&nbsp;&nbsp;await interaction.response.send_message(&quot;I &#39;m glad you feel better!&quot;)</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c5 c6"></span>
+        </p>
+        <p class="c3">
+            <span class="c5 c6">&nbsp;&nbsp;@discord.ui.button(label=&quot;&#128544;&#128544;No you are not doing a proper job &quot;)</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c6">&nbsp;&nbsp;async def no_button_callback(self, interaction, button):</span>
+        </p>
+        <p class="c3">
+            <span class="c5 c6">&nbsp;&nbsp;&nbsp;&nbsp;await interaction.response.send_message(&quot;I &#39;m a bit upset now, and I may not be able to assist you further. Find another bot! &quot;)</span>
+        </p>
+        <p class="c3 c7">
+            <span class="c5 c6"></span>
+        </p>
+        <p class="c3">
+            <span>The conversation would look like this:</span>
+        </p>
+        <p class="c3">
+            <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 774.96px; height: 266.61px;">
+                <img alt="" src="images/image5.png" style="width: 774.96px; height: 266.61px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+            </span>
+        </p>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <p class="c3">
+            <span class="c2">Since I was having the idea before knowing how to draw a decision tree, I feel like it &rsquo;s quite hard to turn it into decision tree format. Also, the conversations and options are not complex, so I just keep the format as follow up questions.</span>
+        </p>
+        <p class="c3">
+            <span>
+                <br>
+                <br>
+                <br>
+            </span>
+            <span class="c20">Video documentation</span>
+        </p>
+        <hr>
+        <p class="c3 c7">
+            <span class="c2"></span>
+        </p>
+        <p class="c3">
+            <span>
+                <br>
+            </span>
+            <span class="c8">
+                <a class="c17" href="https://www.google.com/url?q=https://youtu.be/WBPVPDDIFcc&amp;sa=D&amp;source=editors&amp;ust=1709877252468772&amp;usg=AOvVaw1lCAUZE1r1EVHfF-BlIgri">https://youtu.be/WBPVPDDIFcc</a>
+            </span>
+        </p>
+    </body>
 </html>
